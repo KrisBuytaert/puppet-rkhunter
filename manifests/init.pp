@@ -67,8 +67,7 @@ class rkhunter (
   $sshd_root     = $rkhunter::params::sshd_root,
 ) inherits rkhunter::params {
   # Require class yum to have the relevant repositories in place
-  require yum
-
+  
   # Start workflow
   if $rkhunter::params::linux {
     # Containment
